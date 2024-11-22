@@ -91,6 +91,15 @@ button,a{
     height: inherit;
     position: relative;
 }
+.hero-section-banner{
+    position: relative;
+}
+.hero-section-banner .container{
+    display: grid;
+    place-content: normal !important;
+    height: inherit;
+    position: relative;
+}
 
 .hero-video--section{
     /* max-width: 100%; */
@@ -140,6 +149,14 @@ button,a{
 }
 
 .hero-section {
+    background-image: linear-gradient(rgba(22,22,22,0.7),rgba(22,22,22,0.7)),url(./bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-color: #6c6749;
+}
+.hero-section-banner {
     background-image: linear-gradient(rgba(22,22,22,0.7),rgba(22,22,22,0.7)),url(./bg.jpeg);
     background-size: cover;
     background-position: center;
@@ -253,4 +270,29 @@ footer {
     margin: 1.5rem 0;
     border-left: 4px solid #6c6749;
     background-color: rgba(108, 103, 73, 0.1);
+}
+
+.nav-lst {
+    background-color: #54643a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-lst ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.nav-lst a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-lst a:hover {
+    color: #947a5c;
 }
